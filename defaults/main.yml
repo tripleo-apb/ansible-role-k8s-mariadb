@@ -1,13 +1,11 @@
-coe_host: "https://127.0.0.1:8443"
+coe_host:
 coe_config_context:
 coe_config_file:
 action: provision
 
 service_name: mariadb
+service_account_name: 
 namespace: openstack
-
-hiera_data: {}
-hiera_data_file: ''
 
 mariadb_config:
   host: '{{service_name}}'
